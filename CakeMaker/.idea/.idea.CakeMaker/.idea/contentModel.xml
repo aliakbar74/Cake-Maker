@@ -3,8 +3,8 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Akbar\.Rider2018.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\Akbar\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Akbar\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_CakeMaker.1581752005.00" t="ExcludeRecursive" />
-    <e p="D:\Unity\UnityProject\CakeMaker" t="IncludeRecursive">
+    <e p="C:\Users\Akbar\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_CakeMaker.-524328812.00" t="ExcludeRecursive" />
+    <e p="D:\Unity\UnityProject\Cake-Maker\CakeMaker" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -76,9 +76,24 @@
             <e p="P3D_Main_Tools.cs" t="Include" />
             <e p="P3D_Paintable_Editor.cs" t="Include" />
             <e p="P3D_ResizeWindow.cs" t="Include" />
+            <e p="P3dGroup_Drawer.cs" t="Include" />
+            <e p="P3dIntersect.cs" t="Include" />
+            <e p="P3dWindow.cs" t="Include" />
+            <e p="P3dWindow_Tab0.cs" t="Include" />
+            <e p="P3dWindow_Tab1.cs" t="Include" />
+            <e p="P3dWindow_Tab2.cs" t="Include" />
+            <e p="P3dWindow_Tab3.cs" t="Include" />
+            <e p="P3dWindowBrush.cs" t="Include" />
+            <e p="P3dWindowData.cs" t="Include" />
+            <e p="P3dWindowPaintable.cs" t="Include" />
+            <e p="P3dWindowPaintableTexture.cs" t="Include" />
           </e>
           <e p="Examples" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
             <e p="Scripts" t="Include">
+              <e p="IHitHandler.cs" t="Include" />
               <e p="P3D_ClickToPaint.cs" t="Include" />
               <e p="P3D_ClickToPaintSubstep.cs" t="Include" />
               <e p="P3D_ClickToSpawn.cs" t="Include" />
@@ -95,12 +110,50 @@
               <e p="P3D_PaintOnCollision.cs" t="Include" />
               <e p="P3D_PaintParticleCollisions.cs" t="Include" />
               <e p="P3D_PrefabSpawner.cs" t="Include" />
+              <e p="P3dBetweenRaycast.cs" t="Include" />
+              <e p="P3dDestroyer.cs" t="Include" />
+              <e p="P3dDragPitchYaw.cs" t="Include" />
+              <e p="P3dDragRaycast.cs" t="Include" />
+              <e p="P3dDragRaycastSmooth.cs" t="Include" />
+              <e p="P3dDrip.cs" t="Include" />
+              <e p="P3dFollow.cs" t="Include" />
+              <e p="P3dGraduallyFade.cs" t="Include" />
+              <e p="P3dGui.cs" t="Include" />
+              <e p="P3dInputHelper.cs" t="Include" />
+              <e p="P3dInputManager.cs" t="Include" />
+              <e p="P3dIsolateChild.cs" t="Include" />
+              <e p="P3dOnCollision.cs" t="Include" />
+              <e p="P3dOnParticleCollision.cs" t="Include" />
+              <e p="P3dPaintDebug.cs" t="Include" />
+              <e p="P3dPaintDecal.cs" t="Include" />
+              <e p="P3dPaintSphere.cs" t="Include" />
+              <e p="P3dPaintSphereBlur.cs" t="Include" />
+              <e p="P3dPaintSphereColor.cs" t="Include" />
+              <e p="P3dPaintSphereTriplanar.cs" t="Include" />
+              <e p="P3dPixelCounter.cs" t="Include" />
+              <e p="P3dPixelCounterText.cs" t="Include" />
+              <e p="P3dProximity.cs" t="Include" />
+              <e p="P3dRedoAll.cs" t="Include" />
+              <e p="P3dScatterSpawner.cs" t="Include" />
+              <e p="P3dSpawner.cs" t="Include" />
+              <e p="P3dSprayCan.cs" t="Include" />
+              <e p="P3dTapThrow.cs" t="Include" />
+              <e p="P3dTeam.cs" t="Include" />
+              <e p="P3dTeamCounter.cs" t="Include" />
+              <e p="P3dTeamText.cs" t="Include" />
+              <e p="P3dUndoAll.cs" t="Include" />
             </e>
             <e p="Shaders" t="Include">
               <e p="P3D Cutout RGBA.shader" t="Include" />
+              <e p="P3D Dual Sided.shader" t="Include" />
+              <e p="P3D Shield.shader" t="Include" />
+              <e p="P3D Skybox.shader" t="Include" />
+              <e p="P3D UV2 Cutoff.shader" t="Include" />
+              <e p="P3D UV2.shader" t="Include" />
             </e>
           </e>
           <e p="Scripts" t="Include">
+            <e p="IPaintHandler.cs" t="Include" />
             <e p="P3D_BlendMode.cs" t="Include" />
             <e p="P3D_Brush.cs" t="Include" />
             <e p="P3D_Brush_AdditiveBlend.cs" t="Include" />
@@ -130,9 +183,45 @@
             <e p="P3D_Tree.cs" t="Include" />
             <e p="P3D_Triangle.cs" t="Include" />
             <e p="P3D_UndoState.cs" t="Include" />
+            <e p="P3dBlendMode.cs" t="Include" />
+            <e p="P3dCanvas.cs" t="Include" />
+            <e p="P3dChannel.cs" t="Include" />
+            <e p="P3dCommand.cs" t="Include" />
+            <e p="P3dCoordCopier.cs" t="Include" />
+            <e p="P3dEditor.cs" t="Include" />
+            <e p="P3dEditorWindow.cs" t="Include" />
+            <e p="P3dGroup.cs" t="Include" />
+            <e p="P3dGroupMask.cs" t="Include" />
+            <e p="P3dHelper.cs" t="Include" />
+            <e p="P3dHelper_Editor.cs" t="Include" />
+            <e p="P3dLinkedBehaviour.cs" t="Include" />
+            <e p="P3dMaterialCloner.cs" t="Include" />
+            <e p="P3dMeshAnalysis.cs" t="Include" />
+            <e p="P3dPaintable.cs" t="Include" />
+            <e p="P3dPaintableManager.cs" t="Include" />
+            <e p="P3dPaintableTexture.cs" t="Include" />
+            <e p="P3dPainter.cs" t="Include" />
+            <e p="P3dPainter_Decal.cs" t="Include" />
+            <e p="P3dPainter_Fill.cs" t="Include" />
+            <e p="P3dPainter_Replace.cs" t="Include" />
+            <e p="P3dPainter_Sphere.cs" t="Include" />
+            <e p="P3dPainter_SphereBlur.cs" t="Include" />
+            <e p="P3dPainter_SphereTriplanar.cs" t="Include" />
+            <e p="P3dQuad.cs" t="Include" />
+            <e p="P3dSeamFixer.cs" t="Include" />
+            <e p="P3dShader.cs" t="Include" />
+            <e p="P3dSlot.cs" t="Include" />
+            <e p="P3dStateManager.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="Resources" t="Include">
+              <e p="BlendModes.cginc" t="Include" />
+              <e p="P3D Decal.shader" t="Include" />
+              <e p="P3D Fill.shader" t="Include" />
+              <e p="P3D Replace.shader" t="Include" />
+              <e p="P3D Sphere Blur.shader" t="Include" />
+              <e p="P3D Sphere Triplanar.shader" t="Include" />
+              <e p="P3D Sphere.shader" t="Include" />
               <e p="P3D_BrushPreview.shader" t="Include" />
               <e p="P3D_TexturePreview.shader" t="Include" />
             </e>

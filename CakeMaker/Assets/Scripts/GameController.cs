@@ -23,8 +23,7 @@ public class GameController : MonoBehaviour {
     [Header("UI")] public Slider BrushSizeSlider;
     public GameObject SelectPnl, CakeSizePnl, BrushShapePnl, BrushSettingsPnl, CakeShapePnl, CakeFlavorPnl, StickerPnl;
     public Image ActiveStickerHighlight;
-    public Vector2 BrushSettingPos, StickerPnlPos;
-
+    public Vector2 StickerPnlPos;
     public float MoveUIDelay;
 
     private P3D_Brush _brush;
@@ -191,16 +190,16 @@ public class GameController : MonoBehaviour {
 
         switch (_sidePanels) {
             case SidePanels.None:
-                BrushSettingsPnl.transform.DOLocalMoveX(BrushSettingPos.y, MoveUIDelay);
-                StickerPnl.transform.DOLocalMoveX(StickerPnlPos.y, MoveUIDelay);
+                BrushSettingsPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.y, MoveUIDelay);
+                StickerPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.y, MoveUIDelay);
                 break;
             case SidePanels.StickerPnl:
-                BrushSettingsPnl.transform.DOLocalMoveX(BrushSettingPos.y, MoveUIDelay);
-                StickerPnl.transform.DOLocalMoveX(StickerPnlPos.x, MoveUIDelay);
+                BrushSettingsPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.y, MoveUIDelay);
+                StickerPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.x, MoveUIDelay);
                 break;
             case SidePanels.ColorPalatePnl:
-                BrushSettingsPnl.transform.DOLocalMoveX(BrushSettingPos.x, MoveUIDelay);
-                StickerPnl.transform.DOLocalMoveX(StickerPnlPos.y, MoveUIDelay);
+                BrushSettingsPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.x, MoveUIDelay);
+                StickerPnl.GetComponent<RectTransform>().DOAnchorPosX(StickerPnlPos.y, MoveUIDelay);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -223,9 +222,6 @@ public class GameController : MonoBehaviour {
                 break;
             case SelectPanelType.BrushShape:
                 BrushShapePnl.SetActive(true);
-                break;
-            case SelectPanelType.BrushSettings:
-                BrushSettingsPnl.transform.DOMoveX(BrushSettingPos.x, MoveUIDelay);
                 break;
             case SelectPanelType.CakeShape:
                 CakeShapePnl.SetActive(true);
