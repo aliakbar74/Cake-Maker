@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Enums;
+using PaintIn3D;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ public class GameController : MonoBehaviour {
     public Texture2D[] BrushShape;
     public Texture2D[] Stickers;
 
-    [Header("Brush")] public P3D_ClickToPaint ClickToPaint;
+    [Header("Brush")] public P3dPaintDecal ClickToPaint;
     public ColorPicker ColorPicker;
 
     [Header("UI")] public Slider BrushSizeSlider;
@@ -26,7 +27,7 @@ public class GameController : MonoBehaviour {
     public Vector2 StickerPnlPos;
     public float MoveUIDelay;
 
-    private P3D_Brush _brush;
+//    private P3D_Brush _brush;
     private bool _isBrushSettingOn, _isStickerPnlOn, _isBrush;
     private static readonly int Main = Shader.PropertyToID("_MainTex");
     public bool CanPaint { get; set; }
@@ -47,11 +48,11 @@ public class GameController : MonoBehaviour {
     }
 
     private void SetBrushDefault() {
-        _brush = ClickToPaint.Brush;
+//        _brush = ClickToPaint.Brush;
         var value = BrushSizeSlider.value;
         var size = new Vector2(value, value);
-        _brush.Size = size;
-        _brush.Color = ColorPicker.CurrentColor;
+        ClickToPaint.OverrideSize = size;
+        ClickToPaint.Color = ColorPicker.CurrentColor;
         _isBrush = true;
         SetBrush();
     }
@@ -125,43 +126,45 @@ public class GameController : MonoBehaviour {
     }
 
     public void ChangeSticker(int index) {
-        _brush.Shape = Stickers[index];
+//        _brush.Shape = Stickers[index];
+        ClickToPaint.Texture = Stickers[index];
         ColorPicker.CurrentColor = Color.white;
     }
 
     public void ChangeSticker(Texture2D texture2) {
-        _brush.Shape = texture2;
+//        _brush.Shape = texture2;
+        ClickToPaint.Texture = texture2;
         ColorPicker.CurrentColor = Color.white;
         OpenSidePnl(0);
         _isBrush = false;
     }
 
     public void ChangeBrushShape(int index) {
-        _brush.Shape = BrushShape[index];
+        ClickToPaint.Texture = BrushShape[index];
         ClosePnls();
         _isBrush = true;
     }
 
 
     public void ChangeBrushSize() {
-        if (_brush == null) return;
+        if (ClickToPaint == null) return;
 
         var value = BrushSizeSlider.value;
-        _brush.Size.x = value;
-        _brush.Size.y = value;
+        ClickToPaint.OverrideSize = new Vector2(value, value);
+//        _brush.Size.y = value;
         SetBrush();
     }
 
     public void ChangeBrushColor() {
-        if (_brush == null || !_isBrush) return;
-        _brush.Color = ColorPicker.CurrentColor;
+        if (ClickToPaint == null || !_isBrush) return;
+        ClickToPaint.Color = ColorPicker.CurrentColor;
         SetBrush();
     }
 
 
     private void SetBrush() {
-        if (_brush == null) return;
-        ClickToPaint.Brush = _brush;
+        if (ClickToPaint == null) return;
+//        ClickToPaint.Brush = _brush;
     }
 
     public void OpenCakeSizePnl() {

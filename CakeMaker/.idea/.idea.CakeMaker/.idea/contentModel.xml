@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Akbar\.Rider2018.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Akbar\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Akbar\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_CakeMaker.-524328812.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Akbar\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Akbar\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Akbar\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CakeMaker.-524328812.00" t="ExcludeRecursive" />
     <e p="D:\Unity\UnityProject\Cake-Maker\CakeMaker" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -329,15 +329,12 @@
         </e>
       </e>
       <e p="CakeMaker.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="RTLTMPro-Editor.csproj" t="IncludeRecursive" />
       <e p="RTLTMPro-Tests.csproj" t="IncludeRecursive" />
       <e p="RTLTMPro.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
